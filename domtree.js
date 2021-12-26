@@ -33,6 +33,7 @@ for( var i = 0; i < quantity; i++ ) {
 			element.textContent = greeting;
 			element.style.width = elemenWidth + 'px';
 			element.style.height = elemenHeight + 'px';
+			
 			break;
 		case 'progress':
 			element = document.createElement( 'progress' );
@@ -42,6 +43,7 @@ for( var i = 0; i < quantity; i++ ) {
 				element.setAttribute( 'max', '100' );
 				element.setAttribute( 'value', '100' );
 			}
+			
 			break;
 		case 'select':
 			element = document.createElement( 'select' );
@@ -68,7 +70,7 @@ for( var i = 0; i < quantity; i++ ) {
 	}
  
 	element.style.transform = `translate3d(${x}px, ${y}px, 0px) rotateX(${rx}deg) rotateY(${ry}deg) rotateZ(${rz}deg)`;
- 
+	// element.style.color = "#378b29";
 	tree.appendChild( element );
 }
  
